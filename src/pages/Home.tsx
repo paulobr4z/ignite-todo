@@ -21,9 +21,9 @@ export function Home() {
     }
 
     useEffect(() => {
-        let tasklist = JSON.parse(localStorage.getItem('todo') || '')
+        let tasklist = localStorage.getItem('todo');
 
-        setTasks(tasklist);        
+        if (tasklist) setTasks(JSON.parse(tasklist || ''));
     }, [])
 
     function creatNewTask() {
