@@ -1,0 +1,107 @@
+.taskList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 64px;
+}
+
+.taskList header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.taskList header span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.taskList header span strong {
+    color: var(--blue);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.taskList header span:last-child strong {
+    color: var(--purple);
+}
+
+.taskList header span p {
+    padding: 2px 8px;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 999px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.emptyList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 64px;
+    border-top: 1px solid var(--gray-400);
+}
+
+.emptyList img {
+    margin-bottom: 16px;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 16px;
+    gap: 12px;
+    background-color: var(--gray-500);
+    border: 1px solid #333333;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--blue);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.checked {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-color: var(--purple);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.checked span {
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    top: 3px;
+    left: 6px;
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+
+.deleteTask {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
