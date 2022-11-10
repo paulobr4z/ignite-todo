@@ -12,7 +12,6 @@ interface IInputTask {
 export function InputTask({
     inputValue
 }: IInputTask) {
-    const inputRef = useRef<HTMLInputElement>(null);
     const [value, setValue] = useState('');
 
     const handleChange = (event: FormEvent<HTMLInputElement>) => {
@@ -41,7 +40,7 @@ export function InputTask({
             <button
                 className={styles.submitTask}
                 onClick={getInputValue}
-                onKeyDown={getInputValue}
+                onKeyPress={getInputValue}
             >
                 Criar
                 <PlusCircle size={18} color='#fff' />

@@ -52,7 +52,7 @@ export function TaskList({
                                 >
                                     <span></span>
                                 </div>
-                                <p>{task.title}</p>
+                                <p className={task.done ? styles.done : ''}>{task.title}</p>
                                 <button 
                                     className={styles.deleteTask}
                                     onClick={() => deleteTask(task.id)}
