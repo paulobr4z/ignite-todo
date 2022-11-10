@@ -1,9 +1,17 @@
 # todo
 
 <p>Projeto feito como primeiro desafio do Curso Ignite - Rocketseat.</p>
+
 Live preview: <a href="https://ignite-todo-paulobr4z.vercel.app/">https://ignite-todo-paulobr4z.vercel.app/</a>
 
-Descrição: A aplicação tem como objetivo uma lista de tarefas, podendo adicionar, excluir e marcar as como concluídas.
+Descrição: Aplicação de controle de tarefas no estilo to-do list, contendo as seguintes funcionalidades:
+- Adicionar uma nova tarefa;
+- Marcar e desmarcar uma tarefa como concluída;
+- Excluir uma tarefa da listagem;
+- Mostrar o progresso de conclusão das tarefas;
+- Salvar a lista de tarefas no localstorage;
+- Aviso de exclusão de tarefa;
+- Aviso quando tentar criar um tarefa em branco.
 
 ### Tecnologias
 
